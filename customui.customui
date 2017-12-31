@@ -1,0 +1,34 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"
+		onLoad="Ribbon.Onload">
+	<ribbon startFromScratch="false">
+		<tabs>
+			<tab id="tabStart" label="Start">
+				<group id="grpView" label="Ansicht">
+					<splitButton id="spbView" size="large" >
+						<button id="btnSpbView" 
+								label="Ansicht" 
+								onAction="spbView_showParticipants"
+								imageMso="MailMergeSelectRecipients"/>
+						<menu id="menSbtView" 
+								label="Ansicht" 
+								itemSize="large">
+							<button id="btnSpbView01" 
+									label="Teilnehmer" 
+									onAction="spbView_showParticipants"
+									imageMso="MailMergeSelectRecipients"/>
+							<button id="btnSpbView02" 
+									label="Kurse" 
+									onAction="spbView_showCourses"
+									imageMso="MeetingsWorkspace"/>
+							<button id="btnSpbView03" 
+									label="Maßnahmen" 
+									onAction="spbView_showActivities"/>
+						</menu>
+					</splitButton>
+				</group>
+			</tab>
+			<tab id="tabParticipant" label="Teilnehmer">
+			</tab>
+		</tabs>	
+	</ribbon>	
+</customUI>
